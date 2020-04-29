@@ -20,8 +20,6 @@ public class Bullet : MonoBehaviour
         {
             speed = -speed;
         }
-
-        
     }
 
     private void Update()

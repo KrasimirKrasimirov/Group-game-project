@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class TextChange : MonoBehaviour
 {
-    public Text healthText;
     public Text reserveAmmoText;
-    public Text loadedAmmoText;
 
     // Update is called once per frame
     void Update()

@@ -61,29 +61,6 @@ public class PauseMenu : MonoBehaviour
             }
 
         }
-        //Open journal
-        //if (Input.GetButtonDown("Journal"))
-        //{
-        //    if (_isJournalOpen == false && isPaused != true)
-        //    {
-        //        _isJournalOpen = true;
-        //        _journalCollectionText.SetActive(false);
-        //        pauseMenu.SetActive(true);
-        //        _journalMenu.SetActive(true);
-        //        isPaused = true;
-        //        Time.timeScale = 0;
-        //        Cursor.lockState = CursorLockMode.None;
-        //    }
-        //    else if (_isJournalOpen == true)
-        //    {
-        //        _isJournalOpen = false;
-        //        pauseMenu.SetActive(false);
-        //        _journalMenu.SetActive(false);
-        //        isPaused = false;
-        //        Time.timeScale = 1;
-        //        Cursor.lockState = CursorLockMode.Locked;
-        //    }
-        //}
     }
 
     public void JournalMenu()

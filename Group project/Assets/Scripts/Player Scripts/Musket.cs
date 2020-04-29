@@ -46,21 +46,21 @@ public class Musket : MonoBehaviour
     }
 
     //rotates the musket to point towards the mouse
-    void PointToMouse()
-    {
-        if (PauseMenu.isPaused != true)
-        {
-            Vector3 _mousePos = Input.mousePosition;
-            _mousePos.z = 5.23f;
+    //void PointToMouse()
+    //{
+    //    if (PauseMenu.isPaused != true)
+    //    {
+    //        Vector3 _mousePos = Input.mousePosition;
+    //        _mousePos.z = 5.23f;
 
-            Vector3 _objectPos = Camera.main.WorldToScreenPoint(transform.position);
-            _mousePos.x = _mousePos.x - _objectPos.x;
-            _mousePos.y = _mousePos.y - _objectPos.y;
+    //        Vector3 _objectPos = Camera.main.WorldToScreenPoint(transform.position);
+    //        _mousePos.x = _mousePos.x - _objectPos.x;
+    //        _mousePos.y = _mousePos.y - _objectPos.y;
 
-            float _angle = Mathf.Atan2(_mousePos.y, _mousePos.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, _angle));
-        }
-    }
+    //        float _angle = Mathf.Atan2(_mousePos.y, _mousePos.x) * Mathf.Rad2Deg;
+    //        transform.rotation = Quaternion.Euler(new Vector3(0, 0, _angle));
+    //    }
+    //}
 
     //shoots the musket
     void Shoot()
